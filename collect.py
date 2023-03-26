@@ -13,7 +13,7 @@ def collect():
                 bucket.extend(lines)
 
     with open("collects.txt", "w") as wf:
-        wf.write("\n".join(bucket))
+        wf.write("\n".join(sorted(set(bucket))))
 
 
 if __name__ == '__main__':
